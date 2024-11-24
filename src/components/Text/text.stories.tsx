@@ -4,21 +4,22 @@ import Text, { type TextProps } from '.';
 
 const text: Meta<typeof Text> = {
 	component: Text,
-	title: 'Components/Text',
-	args: {
-		size: 'small',
-		children: 'Default Text'
-	}
+	title: 'Components/Text'
 };
 
 export default text;
 
-export const Default: StoryObj<TextProps> = {};
-
 export const Small: StoryObj<TextProps> = {
 	args: {
-		size: 'medium',
+		size: 'small',
 		children: 'Small Text'
+	}
+};
+
+export const Medium: StoryObj<TextProps> = {
+	args: {
+		size: 'medium',
+		children: 'Medium Text'
 	}
 };
 export const Large: StoryObj<TextProps> = {
