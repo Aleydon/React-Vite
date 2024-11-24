@@ -1,7 +1,11 @@
+import Text from '@components/Text';
+
 export default function App() {
 	return (
 		<div className="flex flex-col items-center justify-center h-screen bg-gradient-to-r from-blue-400 to-purple-300 ">
 			<h1 className="text-4xl text-bold">Hello World</h1>
+
+			<Text>&darr;</Text>
 
 			<a
 				className="cursor-pointer underline"

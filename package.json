@@ -4,8 +4,8 @@
 	"version": "0.0.0",
 	"type": "commonjs",
 	"scripts": {
-		"dev": "vite",
-		"lint": "eslint ./src --fix --ext .tsx,.ts",
+		"dev": "vite --host",
+		"lint": "eslint . --fix --ext .tsx,.ts",
 		"test": "jest",
 		"test:watch": "jest --watchAll",
 		"pre:commit": "eslint . --fix --ext .tsx,.ts && prettier . --write && git add .",
