@@ -42,8 +42,17 @@ npm run dev or yarn dev
 - Eslint + Prettier for code standardization and formatting. :link: https://eslint.org/ + https://prettier.io/
 - Typescript for typing. :link: https://www.typescriptlang.org/
 - Tailwind Css for styling components. :link: https://tailwindcss.com/
+- HuskyJs for automatically lint your commit messages, code, and run tests upon committing or pushing. :link: https://typicode.github.io/husky/
 
 ---
+
+<h2>Tests + Storybook:</h2>
+
+- How to run tests:
+
+```sh
+npm run test or npm run test:watch
+```
 
 It has an example of tests with Jest + Testing-Library in _src/App.spec.tsx_
 
@@ -78,6 +87,19 @@ describe('App Component', () => {
 ```
 
 ---
+
+- How to run storybook:
+
+```sh
+npm run storybook or yarn storybook
+```
+
+<p align="center">
+  <br>
+  <img width="1100" src="./assets/storybok_screen_shot.png" alt="storybook running">
+  <br>
+  <br>
+</p>
 
 also has an example of using Storybook in the Text component in _src/components/Text/text.stories.tsx_
 
