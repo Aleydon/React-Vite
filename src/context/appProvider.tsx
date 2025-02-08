@@ -15,7 +15,7 @@ export const context = createContext<PhraseProps>({
 });
 
 export function AppProvider({ children }: AppProviderProps) {
-	const [phrase, setPhrase] = useState<string>('Github Template');
+	const [phrase, setPhrase] = useState<string>('My Github');
 
 	return (
 		<context.Provider value={{ phrase, setPhrase }}>
