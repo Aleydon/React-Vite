@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
 
 import App from './App';
+import { AppProvider } from './context/appProvider';
 
 describe('App Component', () => {
 	it('should get the text hello world', () => {
@@ -23,5 +24,15 @@ describe('App Component', () => {
 		expect(link).toBeDefined();
 		expect(link).toHaveAttribute('target', '_blank');
 		expect(link).toHaveAttribute('aria-label', 'github.com/Aleydon');
+	});
+
+	it('Should get Github Template text from context', () => {
+		render(
+			<AppProvider>
+				<App />
+			</AppProvider>
+		);
+		const phrase = screen.getByText('Github Template');
+		expect(phrase).toBeDefined();
 	});
 });

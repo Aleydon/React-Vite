@@ -29,16 +29,16 @@
 		"module": "commonjs" /* Specify what module code is generated. */,
 		// "rootDir": "./",                                  /* Specify the root folder within your source files. */
 		// "moduleResolution": "node10",                     /* Specify how TypeScript looks up a file from a given module specifier. */
-		"baseUrl": "./src" /* Specify the base directory to resolve non-relative module names. */,
+		"baseUrl": "." /* Specify the base directory to resolve non-relative module names. */,
 		"paths": {
-			"@src/*": ["./src/*"],
-			"@components/*": ["components/*"],
-			"@constants/*": ["constants/*"],
-			"@utils/*": ["utils/*"],
-			"@hooks/*": ["hooks/*"],
-			"@assets/*": ["assets/*"],
-			"@services/*": ["services/*"],
-			"@context/*": ["context/*"]
+			"@/*": ["src/*"],
+			"@/components/*": ["src/components/*"],
+			"@/constants/*": ["src/constants/*"],
+			"@/utils/*": ["src/utils/*"],
+			"@/hooks/*": ["src/hooks/*"],
+			"@/assets/*": ["src/assets/*"],
+			"@/services/*": ["src/services/*"],
+			"@/context/*": ["src/context/*"]
 		} /* Specify a set of entries that re-map imports to additional lookup locations. */,
 		// "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
 		// "typeRoots": [],                                  /* Specify multiple folders that act like './node_modules/@types'. */

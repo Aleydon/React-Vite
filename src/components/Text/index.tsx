@@ -5,7 +5,7 @@ export interface TextProps {
 	children?: React.ReactNode;
 }
 
-export default function Text({ size = 'large', children }: TextProps) {
+export function Text({ size = 'large', children }: TextProps) {
 	return (
 		<span
 			className={clsx('bold', {
