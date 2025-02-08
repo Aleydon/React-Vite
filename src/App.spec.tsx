@@ -32,7 +32,7 @@ describe('App Component', () => {
 				<App />
 			</AppProvider>
 		);
-		const phrase = screen.getByText('Github Template');
+		const phrase = screen.getByText('My Github');
 		expect(phrase).toBeDefined();
 	});
 });
