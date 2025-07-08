@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { Text, type TextProps } from '.';
 
@@ -18,7 +18,7 @@ export const Small: StoryObj<TextProps> = {
 
 export const Medium: StoryObj<TextProps> = {
 	args: {
-		size: 'medium',
+		size: 'large',
 		children: 'Medium Text'
 	}
 };

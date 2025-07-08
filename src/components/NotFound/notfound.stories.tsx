@@ -1,4 +1,5 @@
-import type { Meta } from '@storybook/react';
+import type { Meta } from '@storybook/react-vite';
+
 import { NotFound } from '.';
 
 const text: Meta<typeof NotFound> = {
