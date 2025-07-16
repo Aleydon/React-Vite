@@ -1,4 +1,12 @@
-<h2 align='center'>:earth_americas: Vite.js Template :earth_americas:</h2>
+<h2 align="center">:earth_americas: Vite.js Template :earth_americas:</h2>
+
+<p align="center">
+  <a href="https://github.com/Aleydon/React-Vite/blob/main/LICENSE" target="_blank">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT">
+  </a>
+  <img src="https://img.shields.io/badge/Status-Under%20Development-blue" alt="Build Status">
+  <img src="https://img.shields.io/badge/Dependencies-Up%20to%20date-brightgreen" alt="Dependencies Status">
+</p>
 
 <p align="center">
   <br>
@@ -7,54 +15,95 @@
   <br>
 </p>
 
-## :pushpin: Requirements: :pushpin:
+<p align="center">
+  This repository provides a robust and opinionated React template powered by Vite.js, designed to kickstart your web development projects with a focus on modern tooling, testing, and code quality. It comes pre-configured with essential development tools to ensure a smooth and efficient workflow.
+</p>
 
-NodeJs: :link: https://nodejs.org/en/
+## :bookmark_tabs: Table of Contents
 
----
-
-#### :arrow_forward: Get Started:
-
-1. Clone this repo
-
-```sh
-git clone https://github.com/Aleydon/React-Vite.git
-```
-
-2. Install NPM packages
-
-```sh
-npm install or yarn install
-```
-
-3.  Run this project
-
-```sh
-npm run dev or yarn dev
-```
+- [:pushpin: Requirements](#pushpin-requirements)
+- [:arrow_forward: Get Started](#arrow_forward-get-started)
+- [:gear: Features & Technologies](#gear-features--technologies)
+- [:hammer_and_wrench: Development & Usage](#hammer_and_wrench-development--usage)
+  - [Running Tests](#running-tests)
+  - [Storybook Documentation](#storybook-documentation)
+- [:handshake: Contributing](#handshake-contributing)
+- [:page_facing_up: License](#page_facing_up-license)
 
 ---
 
-<h2>Template configuration:</h2>
+## :pushpin: Requirements
 
-- Jest + Testing Library for automated testing. :link: https://jestjs.io/ + https://testing-library.com/
-- Storybook for component documentation. :link: https://storybook.js.org/
-- Eslint + Prettier for code standardization and formatting. :link: https://eslint.org/ + https://prettier.io/
-- Typescript for typing. :link: https://www.typescriptlang.org/
-- Tailwind Css for styling components. :link: https://tailwindcss.com/
-- HuskyJs for automatically lint your commit messages, code, and run tests upon committing or pushing. :link: https://typicode.github.io/husky/
+To get started with this template, you need to have Node.js installed on your system.
+
+- **Node.js**: [https://nodejs.org/en/](https://nodejs.org/en/)
 
 ---
 
-<h2>Tests + Storybook:</h2>
+## :arrow_forward: Get Started
 
-- How to run tests:
+Follow these steps to set up and run the project locally:
+
+1.  **Clone this repository:**
+
+    ```sh
+    git clone https://github.com/Aleydon/React-Vite.git
+    ```
+
+2.  **Navigate into the project directory:**
+
+    ```sh
+    cd React-Vite
+    ```
+
+3.  **Install NPM packages:**
+
+    ```sh
+    npm install # or yarn install
+    ```
+
+4.  **Run the development server:**
+
+    ```sh
+    npm run dev # or yarn dev
+    ```
+
+    This will start the development server, and you can view the application in your browser, typically at `http://localhost:5173`.
+
+---
+
+## :gear: Features & Technologies
+
+This template is configured with a comprehensive set of tools to enhance your development experience:
+
+- **Jest + Testing Library**: For robust automated testing of your React components.
+  - :link: [Jest](https://jestjs.io/)
+  - :link: [Testing Library](https://testing-library.com/)
+- **Storybook**: For isolated component development and documentation, making it easy to showcase and test UI components.
+  - :link: [Storybook](https://storybook.js.org/)
+- **ESLint + Prettier**: To maintain consistent code style and catch potential errors early.
+  - :link: [ESLint](https://eslint.org/)
+  - :link: [Prettier](https://prettier.io/)
+- **TypeScript**: For static typing, improving code quality, readability, and maintainability.
+  - :link: [TypeScript](https://www.typescriptlang.org/)
+- **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs.
+  - :link: [Tailwind CSS](https://tailwindcss.com/)
+- **Husky**: For Git hooks, automating tasks like linting commit messages, formatting code, and running tests before commits or pushes.
+  - :link: [Husky](https://typicode.github.io/husky/)
+
+---
+
+## :hammer_and_wrench: Development & Usage
+
+### Running Tests
+
+To execute the automated tests configured with Jest and Testing Library:
 
 ```sh
-npm run test or npm run test:watch
+npm run test # or npm run test:watch
 ```
 
-It has an example of tests with Jest + Testing-Library in _src/App.spec.tsx_
+An example test file (`src/App.spec.tsx`) is included to demonstrate basic testing practices:
 
 ```ts
 import { render, screen } from '@testing-library/react';
@@ -86,12 +135,12 @@ describe('App Component', () => {
 });
 ```
 
----
+### Storybook Documentation
 
-- How to run storybook:
+To run Storybook and explore the component documentation:
 
 ```sh
-npm run storybook or yarn storybook
+npm run storybook # or yarn storybook
 ```
 
 <p align="center">
@@ -101,7 +150,7 @@ npm run storybook or yarn storybook
   <br>
 </p>
 
-also has an example of using Storybook in the Text component in _src/components/Text/text.stories.tsx_
+An example Storybook story (`src/components/Text/text.stories.tsx`) is provided to illustrate how to document your components:
 
 ```ts
 import type { Meta, StoryObj } from '@storybook/react';
@@ -135,3 +184,15 @@ export const Large: StoryObj<TextProps> = {
 	}
 };
 ```
+
+---
+
+## :handshake: Contributing
+
+Contributions are welcome! If you have suggestions for improvements or new features, please feel free to open an issue or submit a pull request.
+
+---
+
+## :page_facing_up: License
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Aleydon/React-Vite/blob/main/LICENSE) file for details.
