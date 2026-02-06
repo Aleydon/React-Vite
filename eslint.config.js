@@ -33,7 +33,8 @@ export default tseslint.config(
 			'packages/react-devtools-shared/src/hooks/__tests__/__source__/__untransformed__/',
 			'packages/react-devtools-shell/dist',
 			'packages/react-devtools-scheduling-profiler/dist',
-			'packages/react-devtools-scheduling-profiler/static'
+			'packages/react-devtools-scheduling-profiler/static',
+			'dist/'
 		]
 	},
 	pluginJs.configs.recommended,
