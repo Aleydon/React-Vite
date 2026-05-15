@@ -86,6 +86,7 @@ export default tseslint.config(
 			'simple-import-sort/imports': 'error',
 			'simple-import-sort/exports': 'error',
 			'react/react-in-jsx-scope': 'off',
+			'import/extensions': 'off',
 			'@typescript-eslint/explicit-function-return-type': 'off',
 			'@typescript-eslint/no-non-null-assertion': 'off',
 			'@typescript-eslint/lines-between-class-members': 'off',
@@ -97,7 +98,8 @@ export default tseslint.config(
 		files: ['**/*.cjs'],
 		languageOptions: {
 			globals: {
-				...globals.node
+				...globals.node,
+				...globals.jest
 			}
 		}
 	}
